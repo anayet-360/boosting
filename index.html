@@ -13,15 +13,21 @@
 </head>
 <body>
       <button type="button" onclick="myFunction()">Click to hide content</button>
+      <button type="button" onclick="show()">Show Content</button>
       <div id="demo">
       <h2>Learn With Anayet</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo error totam odio, rem nam quasi quod quos perspiciatis fuga! Enim veniam est ipsa, similique asperiores doloribus et voluptate excepturi.</p>
       </div>
 
     <script>
+        const x = document.getElementById("demo");
         function myFunction() {
-            const x = document.getElementById("demo");
+           
             x.style.display = "none";
+        }
+
+        function show() {
+            x.style.display = "block";
         }
     </script>
 </body>
