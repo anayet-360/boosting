@@ -28,6 +28,10 @@
 
         function show() {
             x.style.display = "block";
+            setTimeout(function() {
+                alert("You disabled your hidden content option ");
+            },1000)
+           x.style.border = "2px solid red";
         }
     </script>
 </body>
