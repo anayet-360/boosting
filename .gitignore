@@ -1,0 +1,6 @@
+*.html
+*.txt
+img/
+*.js
+!index.html
+!script.js
