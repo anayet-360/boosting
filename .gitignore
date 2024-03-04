@@ -1,4 +1,5 @@
 *.html
+!second.html
 *.txt
 img/
 *.js
