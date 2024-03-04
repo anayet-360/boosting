@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+    <style>
+        #container {
+            width: 500px;
+            height: 500px;
+            border: 2px solid #eee;
+            margin: 0px auto;
+        }
+
+    #shape {
+        stroke-dasharray: 4 1 2 1;
+
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <svg viewBox="0 0 100 100">
+            <g stroke="#eee" stroke-width="0.5" >
+            <line x1="0" y1="10" x2="100" y2="10"/>
+            <line x1="0" y1="20" x2="100" y2="20"/>
+            <line x1="0" y1="30" x2="100" y2="30"/>
+            <line x1="0" y1="40" x2="100" y2="40"/>
+            <line x1="0" y1="50" x2="100" y2="50"/>
+            <line x1="0" y1="60" x2="100" y2="60"/>
+            <line x1="0" y1="70" x2="100" y2="70"/>
+            <line x1="0" y1="80" x2="100" y2="80"/>
+            <line x1="0" y1="90" x2="100" y2="90"/>
+            <line x1="0" y1="100" x2="100" y2="100"/>
+    
+            <line x1="10" y1="0" x2="10" y2="100"/>
+            <line x1="20" y1="0" x2="20" y2="100"/>
+            <line x1="30" y1="0" x2="30" y2="100"/>
+            <line x1="40" y1="0" x2="40" y2="100"/>
+            <line x1="50" y1="0" x2="50" y2="100"/>
+            <line x1="60" y1="0" x2="60" y2="100"/>
+            <line x1="70" y1="0" x2="70" y2="100"/>
+            <line x1="80" y1="0" x2="80" y2="100"/>
+            <line x1="90" y1="0" x2="90" y2="100"/>
+            <line x1="100" y1="0" x2="100" y2="100"/>
+          </g> 
+         <defs>
+         <symbol id="shape" viewBox="0 0 300 100"> 
+         <path d="M20,30 L50,10 L80,30 L50,50 Z" fill="green" stroke="orange" ></path>
+         <circle cx="50" cy="30" r="8" fill="red" stroke="orange"></circle>
+        </symbol>
+      </defs>
+      
+        <use x="20" y="30" xlink:href="#shape"></use>
+
+        </svg>
+    </div>
+
+</body>
+</html>
