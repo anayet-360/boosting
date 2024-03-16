@@ -4,30 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Tutorial Learning</title>
-    <style>
-        h2 {
-           background: red;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-      <button type="button" onclick="myFunction()">Click to hide content</button>
-      <button type="button" onclick="show()">Show Content</button>
-      <div id="demo">
-      <h2>Learn With Anayet</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo error totam odio, rem nam quasi quod quos perspiciatis fuga! Enim veniam est ipsa, similique asperiores doloribus et voluptate excepturi.</p>
-      </div>
-      
-     <p>
-     <bdo dir="rtl">
-        تحتوي اللغة العربية على ثراء لا حدود له من التعابير والمفردات. يُعتبر اللغة العربية واحدة من أقدم اللغات في العالم، وهي لغة القرآن الكريم، الذي يعتبر مصدر الإلهام والتوجيه للمسلمين في جميع أنحاء العالم. تتميز اللغة العربية بنظامها الجميل للقواعد والصرف والنحو، مما يجعلها لغة شعرية رائعة ومناسبة للتعبير عن أعمق المشاعر والأفكار. بفضل تاريخها الغني والمتنوع، فإن اللغة العربية تحتوي على مجموعة واسعة من الكلمات والعبارات التي تعبر عن مختلف المفاهيم والمواضيع، سواء كانت دينية، فلسفية، أدبية أو علمية. تعتبر اللغة العربية أيضًا لغة العلم والمعرفة في العصور القديمة، حيث أسهم العلماء والفلاسفة العرب في العديد من المجالات مثل الرياضيات والطب والفلسفة، مما يعكس مدى تنوع استخداماتها وأهميتها في العالم.
-     </bdo>
-    </p> 
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, et. Assumenda itaque veritatis maiores recusandae magnam quia blanditiis atque, perspiciatis consectetur aliquid quisquam, praesentium est laborum provident dolores ducimus eius!</p>
+  <div class="container">
+     <div id="display">
+        <span>display:none</span>
+        <img src="img/first.jpg" alt="">
+        <button id="remove">Remove</button>
+     </div>
+     <div class="visibility">
+        <span>visibility:hidden</span>
+        <img src="img/use.jpg" alt="">
+        <button id="hide">Hide</button>
+     </div>
+     <div class="reset">
+        <span style="background-color: transparent;color: #000;">Reset</span>
+        <img src="img/first.jpg" alt="">
+        <button id="reset">ResetAll</button>
+     </div>
+  </div>
+  
+  <script>
+      const remove = document.getElementById('remove');
+      const hide = document.getElementById("hide");
+      const reset = document.getElementById('reset');
 
-    <p>Thanks for adding arabic sentence</p>
+      const contentRemove = document.querySelector("#display");
 
+      const visible = document.querySelector(".visibility");
+
+      const resetAll = document.querySelector(".reset");
+
+      remove.addEventListener("click",function() {
+         contentRemove.style.display = "none";
+      });
+    
+      hide.addEventListener("click",function() {
+           visible.style.visibility = "hidden";
+      });
+
+      reset.addEventListener("click",function() {
+         contentRemove.style.display = "block";
+         visible.style.visibility = "visible";
+      });
+
+  </script>
 </body>
 </html>
